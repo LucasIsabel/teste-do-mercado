@@ -10,7 +10,8 @@
 
   "autoload":{
     "psr-4":{
-      "Acme\\Models\\":"Acme/Models"
+      "Acme\\Models\\":"Acme/Models",
+      "Acme\\Function\\":"Acme/Function"
     }
   }
 

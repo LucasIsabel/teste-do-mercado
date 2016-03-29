@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Acme\\Models\\' => array($baseDir . '/Acme/Models'),
+    'Acme\\Function\\' => array($baseDir . '/Acme/Function'),
 );

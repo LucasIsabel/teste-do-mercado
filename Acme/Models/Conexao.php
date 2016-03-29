@@ -11,7 +11,7 @@ use PDO;
 
 class Conexao extends DataAccess
 {
-    protected $pdo;
+    protected static $pdo;
     protected $dataAcess;
 
     public function __construct()
