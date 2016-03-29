@@ -1,0 +1,17 @@
+{
+
+  "authors":[
+    {
+      "name":"Lucas Oliveira",
+      "email":"lucas.o.isa@hotmail.com",
+      "role":"Developer"
+    }
+  ],
+
+  "autoload":{
+    "psr-4":{
+      "Acme\\Models\\":"Acme/Models"
+    }
+  }
+
+}
