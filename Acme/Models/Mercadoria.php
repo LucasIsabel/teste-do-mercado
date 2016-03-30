@@ -47,4 +47,31 @@ class Mercadoria extends Conexao
             $pdo->rollBack();
         }
     }
+
+    public function listarRegistros(){
+
+        $pdo = $this->getCon();
+        $pdo->beginTransaction();
+
+        try{
+            $sql = "SELECT * FROM {$this->table}";
+            $buscar = $pdo->query($sql);
+            $buscar->execute();
+
+                if($buscar->rowCount() != null){
+
+                    return $buscar->fetchAll();
+
+                }
+
+                return false;
+
+        }catch(\SQLiteException $e){
+            echo $e->getMessage();
+
+            $pdo->rollBack();
+        }
+
+
+    }
 }

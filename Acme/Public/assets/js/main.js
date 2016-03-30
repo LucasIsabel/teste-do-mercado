@@ -6,6 +6,7 @@ $(document).ready(function() {
         var quantidade = $('#quantidade').val();
         var preco = $('#preco').val();
         var tipo_negocio = $('#tipo_negocio').val();
+        var operacao = "cadastro";
 
         $('#btn_enviar').click(function(){
                 cadastrarProduto();
@@ -17,6 +18,7 @@ $(document).ready(function() {
                        type:"POST",
                        data:
                        {
+                         operacao:operacao,
                          codigo_mercadoria:codigo_mercadoria,
                          tipo_mercadoria:tipo_mercadoria,
                          nome_mercadoria:nome_mercadoria,
@@ -24,9 +26,13 @@ $(document).ready(function() {
                          preco:preco,
                          tipo_negocio:tipo_negocio
                        },
-                       url:"../Function/ListarDados.php",
+                       url:"../Function/Operacoes.php",
                        success:function(retorno){
-                           alert(retorno);
+                           if(retorno == 1){
+                                   alert('Cadastrado com Sucesso');
+                           }else{
+                                   alert('Erro ao Cadastrar');
+                           };
                        }
                     }
                 );
