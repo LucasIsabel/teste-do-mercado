@@ -64,7 +64,7 @@
                     </div>
                 </form>
 
-                <button id="btn_enviar" class="btn waves-effect waves-light"  name="action">Registrar
+                <button id="btn_enviar" class="btn waves-effect waves-light">Registrar
                     <i class="material-icons right">send</i>
                 </button>
             </div>

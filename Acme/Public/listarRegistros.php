@@ -1,10 +1,10 @@
 <?php
+
     require_once "config.php";
 
     $model = new \Acme\Models\Mercadoria();
     $registros = $model->listarRegistros();
 
-var_dump($registros);
 ?>
 
 <!doctype html>
@@ -28,7 +28,7 @@ var_dump($registros);
 
         <h3 class="collapsible"> Transações Registradas </h3>
 
-        <table>
+        <table class="striped">
             <thead>
             <tr>
 
@@ -55,11 +55,11 @@ var_dump($registros);
 
                     <tr>
                         <td><?= $registro->codigo_mercadoria ?></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td><?= $registro->tipo_mercadoria ?></td>
+                        <td><?= $registro->nome_mercadoria ?></td>
+                        <td><?= $registro->quantidade ?></td>
+                        <td><?= $registro->preco ?></td>
+                        <td><?= $registro->tipo_venda ?></td>
                     </tr>
 
                     <?php

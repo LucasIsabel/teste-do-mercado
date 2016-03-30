@@ -28,8 +28,8 @@ class Mercadoria extends Conexao
                 $cadastrar->bindValue(1,$codigo_mercadoria);
                 $cadastrar->bindValue(2,$tipo_mercadoria);
                 $cadastrar->bindValue(3,$nome_mercadoria);
-                $cadastrar->bindValue(4,$quantidade);
-                $cadastrar->bindValue(5,$preco);
+                $cadastrar->bindValue(4,(integer) $quantidade);
+                $cadastrar->bindValue(5,(double) $preco);
                 $cadastrar->bindValue(6,$tipo_venda);
 
                 if($cadastrar->execute() == 1){
@@ -46,6 +46,7 @@ class Mercadoria extends Conexao
 
             $pdo->rollBack();
         }
+
     }
 
     public function listarRegistros(){
@@ -71,7 +72,6 @@ class Mercadoria extends Conexao
 
             $pdo->rollBack();
         }
-
 
     }
 }

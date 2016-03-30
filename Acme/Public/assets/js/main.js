@@ -8,10 +8,6 @@ $(document).ready(function() {
         var tipo_negocio = $('#tipo_negocio').val();
         var operacao = "cadastro";
 
-        $('#btn_enviar').click(function(){
-                cadastrarProduto();
-        });
-
         function cadastrarProduto() {
                 $.ajax(
                     {
@@ -32,13 +28,17 @@ $(document).ready(function() {
                                    alert('Cadastrado com Sucesso');
                            }else{
                                    alert('Erro ao Cadastrar');
-                           };
+                           }
                        }
                     }
                 );
         }
 
-        $('select').material_select();
+        $('#btn_enviar').on('click',function(){
+            cadastrarProduto();
+                $("form")[0].reset();
+        });
 
+        $('select').material_select();
 });
 
