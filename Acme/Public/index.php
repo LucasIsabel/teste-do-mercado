@@ -77,6 +77,7 @@
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/maskInput.js"></script>
     <script src="assets/js/main.js"></script>
 
 </html>

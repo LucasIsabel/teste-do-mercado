@@ -40,5 +40,9 @@ $(document).ready(function() {
         });
 
         $('select').material_select();
+
+        /* Aplicação de mascara nos campos inputs */
+
+        $('#preco').maskMoney();
 });
 
