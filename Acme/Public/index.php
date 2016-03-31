@@ -79,7 +79,7 @@
                 <h4> Preencha todos os dados Corretamente ! </h4>
             </div>
             <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+                <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
             </div>
         </div>
 
