@@ -85,14 +85,16 @@
                     ?>
 
             </tbody>
-        </table>
 
+        </table>
+        <a href="index.php" class="modal-action modal-close waves-effect waves-green btn-flat right">Home</a>
     </div>
 
 </body>
 
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/maskInput.js"></script>
     <script src="assets/js/main.js"></script>
 
 </html>

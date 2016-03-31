@@ -28,7 +28,7 @@
                 <form class="col s12">
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="codigo_mercadoria" type="text" class="validate">
+                            <input id="codigo_mercadoria" type="text">
                             <label for="codigo_mercadoria">Código da Mercadoria</label>
                         </div>
                         <div class="input-field col s6">
@@ -43,7 +43,7 @@
                             <label for="nome_mercadoria">Nome da Mercadoria</label>
                         </div>
                         <div class="input-field col s6">
-                            <input id="quantidade" type="text" class="validate">
+                            <input id="quantidade" type="number" class="validate" attern="[0-9]+$">
                             <label for="quantidade">Quantidade</label>
                         </div>
                     </div>
@@ -70,6 +70,33 @@
             </div>
 
         </div>
+
+        <!-- Janela Modal -->
+
+        <!-- Modal Structure -->
+        <div id="myMoldal" class="modal">
+            <div class="modal-content">
+                <h4> Preencha todos os dados Corretamente ! </h4>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+            </div>
+        </div>
+
+        <!-- Modal Rodapé -->
+
+        <!-- Modal Trigger -->
+
+        <!-- Modal Structure -->
+        <div id="modalConfirm" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Cadastrado com Sucesso !!</h4>
+            </div>
+            <div class="modal-footer">
+                <a href="listarRegistros.php" class=" modal-action modal-close waves-effect waves-green btn-flat">Ver Registros</a>
+            </div>
+        </div>
+
 
     </div>
 
