@@ -42,7 +42,12 @@ $(document).ready(function() {
         $('select').material_select();
 
         /* Aplicação de mascara nos campos inputs */
+        /* Usado como referencia, ( http://blog.heitorfig.com/criar-mascara-de-moeda-ou-decimais-com-jquery/ )*/
 
-        $('#preco').maskMoney();
+        $('#preco').maskMoney({
+            symbol : 'R$', /* Símbolo da moeda */
+            decimal : ',', /* Separador de decimais */
+            thousands : '.', /* Separador de milhares */
+        });
 });
 
