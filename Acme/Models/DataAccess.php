@@ -23,10 +23,10 @@ class DataAccess
 
     public function __construct()
     {
-        $this->user = "root";
-        $this->localhost = "localhost";
-        $this->database = "project_test";
-        $this->password = "lucky2601";
+        $this->user = "hlmoxoggrteuff";
+        $this->localhost = "ec2-54-235-199-36.compute-1.amazonaws.com";
+        $this->database = "d7nbq32dmmneif";
+        $this->password = "CPdO9GwiD507UOky5l_w9uzVvu";
     }
 
     public function getLocalhost()
